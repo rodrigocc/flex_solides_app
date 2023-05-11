@@ -12,6 +12,11 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   LoginBloc(this._loginWithEmailUseCase) : super(LoginInitial()) {
     on<LoginAuthenticateEvent>((event, emit) async {
       final result = await _loginWithEmailUseCase.LoginWithEmail(event.login, event.password);
+      
+
+       
+     
+    
     });
   }
 }
